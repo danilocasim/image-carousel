@@ -36,9 +36,9 @@ export const eventListeners = () => {
       const slides = document.querySelector("#slides");
       const imgSlide = document.querySelectorAll(".slides > div");
 
-      dots.forEach((dot) => {
+      dots.forEach((dot, dotsIndex) => {
         dot.classList.remove("current-nav");
-        imgSlide[index].classList.add("hide");
+        imgSlide[dotsIndex].classList.add("hide");
       });
 
       MarginValues.imagesPosition.forEach((el) => {

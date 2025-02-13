@@ -3,6 +3,7 @@ import { MarginValues } from "./margin-position";
 export const activeNav = () => {
   const dots = document.querySelectorAll(".dot");
   const imgSlide = document.querySelectorAll(".slides > div");
+  const slides = document.querySelector("#slides");
 
   dots.forEach((dot, index) => {
     dot.classList.remove("current-nav");
