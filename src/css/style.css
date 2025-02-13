@@ -1,1 +1,23 @@
 @import "./reset.css";
+
+.wrapper {
+  position: relative;
+  height: 150px;
+  border: 2px solid red;
+}
+.frame {
+  border: 2px solid blue;
+}
+
+.slides {
+  position: absolute;
+  top: 0;
+  display: flex;
+  border: 2px solid orange;
+  z-index: -1;
+}
+img,
+.frame {
+  height: 150px;
+  width: 150px;
+}
