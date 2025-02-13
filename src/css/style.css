@@ -1,23 +1,67 @@
 @import "./reset.css";
 
+body {
+  overflow-x: hidden;
+}
 .wrapper {
   position: relative;
-  height: 150px;
-  border: 2px solid red;
+  display: flex;
+  justify-content: center;
 }
+
 .frame {
-  border: 2px solid blue;
+  position: relative;
+}
+.frame img {
+  position: absolute;
+}
+.frame #right {
+  top: 50%;
+  left: 1.1rem;
+
+  transform: translateY(-50%);
+}
+.frame #left {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.nav-dot {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-dot > * {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.current-nav {
+  background-color: orange;
 }
 
 .slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   display: flex;
-  border: 2px solid orange;
   z-index: -1;
+  width: 10000vw;
 }
-img,
+
+.slides img,
 .frame {
-  height: 150px;
-  width: 150px;
+  height: 100vh;
+  width: 100vw;
 }
