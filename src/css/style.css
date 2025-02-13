@@ -12,13 +12,13 @@ body {
 
 .frame {
   position: relative;
-  #right {
+  #left {
     top: 50%;
     left: 1.1rem;
 
     transform: translateY(-50%);
   }
-  #left {
+  #right {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
@@ -50,6 +50,10 @@ body {
   background-color: orange;
 }
 
+.hide {
+  visibility: hidden;
+}
+
 .slides {
   display: flex;
   justify-content: center;
@@ -59,6 +63,7 @@ body {
   display: flex;
   z-index: -1;
   width: 10000vw;
+  height: 100vh;
 }
 
 .slides img,

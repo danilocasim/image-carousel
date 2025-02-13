@@ -10,6 +10,12 @@ export const autoSlide = () => {
 
     MarginValues.left -= 200;
     slides.style.marginLeft = MarginValues.left + "vw";
+
+    if (MarginValues.left <= -600) {
+      MarginValues.left = 600;
+    }
+    console.log(MarginValues.left);
+
     activeNav();
   }, 5000);
 };
